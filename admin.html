@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Administrar contenido | IDEAL Moreno</title>
+    <link rel="stylesheet" href="data/styles.css" />
+  </head>
+  <body class="admin-body">
+    <script>
+      if (sessionStorage.getItem("ideal-moreno-auth") !== "true") {
+        window.location.replace("data/login.html");
+      }
+    </script>
+    <header class="site-header admin-header">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="media/Logo_ideal_moreno.png" alt="IDEAL Moreno" />
+        <span>
+          <strong>IDEAL Moreno</strong>
+          <small>Panel de contenido</small>
+        </span>
+      </a>
+      <nav class="main-nav is-open">
+        <a href="index.html">Volver al sitio</a>
+      </nav>
+    </header>
+
+    <main class="admin-shell">
+      <section class="admin-intro">
+        <p class="eyebrow">Carga de contenido</p>
+        <h1>Noticias, talleres y actividades</h1>
+        <p>
+          Gestioná publicaciones y talleres desde tarjetas simples. Los cambios se
+          guardan en este navegador.
+        </p>
+      </section>
+
+      <div class="admin-dashboard">
+        <button class="admin-action-card is-active" type="button" data-admin-panel-target="noticias">
+          <strong>Gestión de noticias</strong>
+          <span>Crear posteos, cargar imagen, resumen y botón opcional.</span>
+        </button>
+        <button class="admin-action-card" type="button" data-admin-panel-target="talleres">
+          <strong>Gestión de talleres</strong>
+          <span>Administrar talleres, lugar, fecha y link de inscripción.</span>
+        </button>
+      </div>
+
+      <section class="admin-panel">
+        <div class="admin-toolbar">
+          <button class="button button-primary" type="button" data-save>Guardar cambios</button>
+        </div>
+
+        <div class="editor-columns">
+          <section id="gestion-noticias" class="admin-editor-section" data-admin-panel="noticias">
+            <div class="admin-section-head">
+              <div>
+                <p class="eyebrow">Contenido</p>
+                <h2>Noticias</h2>
+              </div>
+              <button class="button button-secondary" type="button" data-add-news>Agregar noticia</button>
+            </div>
+            <div class="editor-list" data-news-editor></div>
+          </section>
+          <section id="gestion-talleres" class="admin-editor-section" data-admin-panel="talleres" hidden>
+            <div class="admin-section-head">
+              <div>
+                <p class="eyebrow">Actividades</p>
+                <h2>Talleres</h2>
+              </div>
+              <button class="button button-secondary" type="button" data-add-workshop>Agregar taller</button>
+            </div>
+            <div class="editor-list" data-workshop-editor></div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <template id="news-template">
+      <article class="editor-card">
+        <div class="editor-card-head">
+          <strong>Noticia</strong>
+          <button type="button" data-remove>Eliminar</button>
+        </div>
+        <label>Título <input data-field="title" /></label>
+        <label>Categoría <input data-field="category" /></label>
+        <label>Fecha <input data-field="date" type="date" /></label>
+        <label>Resumen <textarea data-field="summary" rows="4"></textarea></label>
+        <label>Imagen URL o ruta <input data-field="image" /></label>
+        <label>Subir imagen <input type="file" accept="image/*" data-image-file /></label>
+        <label class="checkbox-label">
+          <input data-field="useLink" type="checkbox" />
+          Agregar botón con link
+        </label>
+        <label data-link-config>Texto del botón <input data-field="linkLabel" placeholder="Ver más" /></label>
+        <label data-link-config>Link del botón <input data-field="link" /></label>
+      </article>
+    </template>
+
+    <template id="workshop-template">
+      <article class="editor-card">
+        <div class="editor-card-head">
+          <strong>Taller</strong>
+          <button type="button" data-remove>Eliminar</button>
+        </div>
+        <label>Título <input data-field="title" /></label>
+        <label>Fecha <input data-field="date" /></label>
+        <label>Lugar <input data-field="place" /></label>
+        <label>Descripción <textarea data-field="description" rows="4"></textarea></label>
+        <label>Link de inscripción <input data-field="formUrl" /></label>
+      </article>
+    </template>
+
+    <script src="data/app.js"></script>
+    <script src="data/admin.js"></script>
+  </body>
+</html>
