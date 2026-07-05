@@ -12,6 +12,7 @@ const IDEAL_LINKS = {
   quilmes: "https://www.idealquilmes.com.ar/",
   lanus: "https://www.instagram.com/idealanus/",
   matanza: "https://www.idealmatanza.org.ar/",
+  brown: "https://www.instagram.com/ideal_brown/",
   inicio: "#inicio",
 };
 
