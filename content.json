@@ -1,0 +1,76 @@
+{
+  "areas": [
+    {
+      "key": "identidad-local",
+      "title": "Identidad local, participación ciudadana y comunidad organizada",
+      "description": "Promueve el sentido de pertenencia morenense, la participación ciudadana activa y la organización comunitaria como herramientas para transformar la realidad local. Genera espacios de encuentro, debate y acción colectiva para abordar problemáticas, demandas, proyectos y sueños de la comunidad, trabajando de forma transversal con otras comisiones."
+    },
+    {
+      "key": "generos-y-diversidad",
+      "title": "Géneros, nuevas masculinidades y diversidad sexual",
+      "description": "Trabaja para construir una comunidad con igualdad de géneros, respeto por la diversidad y vínculos libres de violencias. Promueve debates, talleres, campañas y redes de acompañamiento sobre feminismos populares, diversidad sexual, derechos conquistados y nuevas masculinidades, incorporando esta mirada de forma transversal en todas las áreas del Instituto."
+    },
+    {
+      "key": "derechos-humanos",
+      "title": "Derechos humanos, acceso a la justicia y democracia",
+      "description": "Promueve el ejercicio pleno de los derechos individuales y colectivos, el acceso a la justicia y la participación democrática. Brinda orientación, acompañamiento y formación ciudadana, articulando con instituciones locales y mesas de trabajo sobre ciclo de vida, migrantes, economía, empleo y cooperativismo para fortalecer una comunidad más justa, solidaria y democrática."
+    },
+    {
+      "key": "ambiente",
+      "title": "Ambiente",
+      "description": "Impulsa un ambientalismo popular con justicia social, entendiendo el ambiente como parte del derecho a vivir dignamente. Desarrolla proyectos de educación ambiental, cuidado del agua y el suelo, reforestación, manejo integral de residuos, prevención de la contaminación y propuestas de políticas públicas con participación comunitaria."
+    },
+    {
+      "key": "salud-habitat",
+      "title": "Salud, hábitat y desarrollo comunitario",
+      "description": "Aborda la salud como un derecho humano integral, ligado al territorio, el ambiente y las condiciones de vida. Promueve prevención, formación, acompañamiento y redes institucionales mediante consejería en salud, trabajo sobre discapacidad, consumos problemáticos, hábitat y vivienda, fortaleciendo cuidados comunitarios y políticas públicas participativas."
+    },
+    {
+      "key": "educacion-cultura-deporte",
+      "title": "Educación, cultura y deporte",
+      "description": "Concibe la educación, la cultura y el deporte como derechos y herramientas de transformación social. Impulsa experiencias de educación popular, talleres comunitarios y acciones contra la desigualdad educativa; promueve la cultura como identidad, memoria, resistencia y creatividad; y fortalece el deporte como espacio de inclusión, bienestar, valores y organización comunitaria, articulando con escuelas, clubes, centros culturales y organizaciones barriales."
+    }
+  ],
+  "news": [
+    {
+      "title": "Torneo de fútbol juvenil 2024",
+      "category": "Publicación",
+      "date": "2026-05-10",
+      "summary": "Una jornada a puro deporte, compañerismo y diversión.",
+      "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Plaza%20San%20Mart%C3%ADn%20-%20panoramio%20(4).jpg",
+      "link": "#"
+    },
+    {
+      "title": "Jornada de ambientación",
+      "category": "Institucional",
+      "date": "2026-04-25",
+      "summary": "Plantamos futuro en comunidad con actividades para todas las edades.",
+      "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Estaci%C3%B3n%20Moreno.jpg",
+      "link": "#"
+    },
+    {
+      "title": "Taller de escritura creativa",
+      "category": "Formación",
+      "date": "2026-04-15",
+      "summary": "Exploramos ideas y damos forma a nuevas historias.",
+      "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Moreno%2C%20Buenos%20Aires%20Province%2C%20Argentina%20-%20panoramio%20%28226%29.jpg",
+      "link": "#"
+    }
+  ],
+  "workshops": [
+    {
+      "title": "Taller de herramientas digitales para organizaciones",
+      "date": "Sábado 6 de junio | 10:00 hs",
+      "place": "Moreno centro",
+      "description": "Uso práctico de formularios, redes sociales y piezas de comunicación para actividades barriales.",
+      "formUrl": "https://forms.gle/"
+    },
+    {
+      "title": "Introducción a la gestión de proyectos comunitarios",
+      "date": "Miércoles 17 de junio | 18:00 hs",
+      "place": "Modalidad híbrida",
+      "description": "Planificación, objetivos, cronograma y seguimiento para iniciativas sociales y educativas.",
+      "formUrl": "https://forms.gle/"
+    }
+  ]
+}

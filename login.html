@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Acceso administrativo | IDEAL Moreno</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="login-shell">
+      <section class="login-card">
+        <img src="../media/Logo_ideal_moreno.png" alt="IDEAL Moreno" />
+        <h1>Acceso administrativo</h1>
+        <p>Ingresá para administrar noticias, talleres y actividades.</p>
+        <form class="login-form" data-login-form>
+          <label>
+            Usuario
+            <input name="user" autocomplete="username" required />
+          </label>
+          <label>
+            Contraseña
+            <input name="password" type="password" autocomplete="current-password" required />
+          </label>
+          <button class="button button-primary" type="submit">Ingresar</button>
+          <a class="button button-ghost" href="../index.html#inicio">Volver al sitio</a>
+          <p class="login-error" data-login-error></p>
+        </form>
+      </section>
+    </main>
+    <script src="login.js"></script>
+  </body>
+</html>

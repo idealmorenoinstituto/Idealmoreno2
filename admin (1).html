@@ -4,24 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Administrar contenido | IDEAL Moreno</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="data/styles.css" />
   </head>
   <body class="admin-body">
     <script>
       if (sessionStorage.getItem("ideal-moreno-auth") !== "true") {
-        window.location.replace("login.html");
+        window.location.replace("data/login.html");
       }
     </script>
     <header class="site-header admin-header">
-      <a class="brand" href="../index.html">
-        <img class="brand-logo" src="../media/Logo_ideal_moreno.png" alt="IDEAL Moreno" />
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="media/Logo_ideal_moreno.png" alt="IDEAL Moreno" />
         <span>
           <strong>IDEAL Moreno</strong>
           <small>Panel de contenido</small>
         </span>
       </a>
       <nav class="main-nav is-open">
-        <a href="../index.html">Volver al sitio</a>
+        <a href="index.html">Volver al sitio</a>
       </nav>
     </header>
 
@@ -111,7 +111,7 @@
       </article>
     </template>
 
-    <script src="app.js"></script>
-    <script src="admin.js"></script>
+    <script src="data/app.js?v=1.0.2"></script>
+<script src="data/admin.js?v=1.0.1"></script>
   </body>
 </html>
